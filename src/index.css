@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+
+@media (max-width: 600px) {
+  li.block_list, li.skills_list {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 25px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ff7062;
+  color: white;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.about_me {
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.component.first-component {
+  background-color: #ff7062;
+  position: relative;
+}
+
+.component.second-component {
+  background-color: #100F0F;
+  position: relative;
+}
+
+.component.third-component {
+  background-color: #06d6a0;
+  position: relative;
+  color: #100F0F;
+}
+
+.nav_button {
+  background-color: #06d6a0;
+  color: #ffffff;
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  border-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px -2px #700D01;
+  cursor: pointer;
+}
+
+div.centered_section {
+  margin: auto;
+  text-align: center;
+}
+
+.nav_button:hover {
+  background-color: #ffffff;
+  color: #06d6a0;
+}
+
+li {
+  display: block;
+  line-height: 3;
+  font-size: 18px;
+}
+
+li.block_list:hover {
+  color: #06d6a0;
+}
+
+li.skills_list:hover {
+  color: #ff7062;
+}
+
+ul.qual {
+  margin-top: 20px;
+}
+
+h1.coral {
+  color: #ff7062;
+}
+
+h1.white {
+  color: white;
+}
+
+div.row {
+  display: flex;
+}
+
+div.column {
+  flex: 50%;
+}
+
+div.column.left {
+  margin-right: 100px;
+}
+div.column.right {
+  margin-left: 100px;
 }
